@@ -1,7 +1,15 @@
-/*!
-* Start Bootstrap - Small Business v5.0.6 (https://startbootstrap.com/template/small-business)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-small-business/blob/master/LICENSE)
-*/
-// This file is intentionally blank
-// Use this file to add JavaScript to your project
+// Slide in
+document.addEventListener("DOMContentLoaded", function () {
+    const slideElements = document.querySelectorAll('.slide-in');
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Tek seferlik animasyon
+            }
+        });
+    }, { threshold: 0.2 });
+
+    slideElements.forEach(el => observer.observe(el));
+});

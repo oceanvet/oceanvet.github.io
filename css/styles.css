@@ -10825,7 +10825,26 @@ textarea.form-control-lg {
   }
 }
 
+/* Custom Styles */
 .stealth-link {
   color: inherit;
   text-decoration: inherit;
+}
+
+/* Slide-in animasyonları */
+.slide-in, .slide-in-left {
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.slide-in { transform: translateX(50px); }
+.slide-in-left { transform: translateX(-50px); }
+.visible { opacity: 1; transform: translateX(0); }
+
+/* Hover efekti görseller için (isteğe bağlı) */
+.hizmet-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hizmet-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
