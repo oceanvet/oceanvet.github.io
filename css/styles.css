@@ -10827,8 +10827,15 @@ textarea.form-control-lg {
 
 /* Custom Styles */
 .content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   min-height: 100vh; /* full viewport height */
+  background: #0001;
+  border-radius: var(--bs-border-radius) !important;
 }
+
 .stealth-link {
   color: inherit;
   text-decoration: inherit;
