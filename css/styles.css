@@ -10831,7 +10831,7 @@ textarea.form-control-lg {
   margin-bottom: 3rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  min-height: 100vh; /* full viewport height */
+  min-height: calc(100vh - 280px); /* full viewport height */
   background: #0001;
   border-radius: var(--bs-border-radius) !important;
 }
@@ -10877,8 +10877,10 @@ textarea.form-control-lg {
 /* Map */
 .map-container {
   width: 100%;
-  max-width: 1200px; /* max width on large screens */
-  height: 600px;    /* default height */
+  height: 60vh;
+  min-height: 400px;
+  border-radius: var(--bs-border-radius);
+  overflow: hidden;
   margin: 0 auto;   /* center horizontally */
 }
 
