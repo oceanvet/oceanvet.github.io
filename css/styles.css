@@ -10897,3 +10897,36 @@ textarea.form-control-lg {
       padding: 0 10px; /* optional side padding */
   }
 }
+
+/* Floating Image Stuff */
+.first-paragraph {
+  position: relative; /* img için referans noktası */
+}
+
+.paragraph-image {
+  width: 30rem;
+  height: auto;
+  border-radius: var(--bs-border-radius);
+}
+
+.paragraph-image-right {
+  float: right;
+  margin: 0 0 10px 15px;
+}
+
+.paragraph-image-left {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+/* Mobile: image full width above paragraph */
+@media (max-width: 992px) {
+  .paragraph-image {
+      float: none;           /* cancel float */
+      display: block;        /* block so it spans width */
+      width: 100%;           /* full container width */
+      max-width: 100%;       /* avoid overflow */
+      margin: 0 0 15px 0;    /* space below image */
+      border-radius: 8px;    /* keep rounded corners */
+  }
+}
