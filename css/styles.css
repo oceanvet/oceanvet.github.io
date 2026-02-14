@@ -10846,8 +10846,17 @@ textarea.form-control-lg {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
+
 .slide-in { transform: translateX(50px); }
 .slide-in-left { transform: translateX(-50px); }
+@media (max-width: 768px) {
+  .slide-in-sm { transform: translateX(50px); }
+  .slide-in-left-sm { transform: translateX(-50px); }
+}
+
+
+
 .visible { opacity: 1; transform: translateX(0); }
 
 /* Hover efekti görseller için (isteğe bağlı) */
