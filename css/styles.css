@@ -10898,11 +10898,6 @@ textarea.form-control-lg {
   }
 }
 
-/* Floating Image Stuff */
-.first-paragraph {
-  position: relative; /* img için referans noktası */
-}
-
 .paragraph-image {
   width: 30rem;
   height: auto;
