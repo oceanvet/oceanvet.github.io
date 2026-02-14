@@ -62,7 +62,7 @@
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
   --bs-body-color: #212529;
-  --bs-body-bg: #c5fff6;
+  --bs-body-bg: #cafff7;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -10842,6 +10842,12 @@ textarea.form-control-lg {
 }
 
 /* Slide-in animasyonları */
+@media (max-width: 1055px) {
+  .slide-wrapper {
+    overflow-x: hidden;
+  }
+}
+
 .slide-in, .slide-in-left {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
